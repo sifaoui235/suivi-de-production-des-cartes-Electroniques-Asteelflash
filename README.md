@@ -1,6 +1,6 @@
 # Suivi de Production des Cartes Électroniques — Infrastructure Cloud AWS
 
-## 📋 Description
+## Description
 
 Application web de suivi de production des cartes électroniques, développée dans le cadre d'un stage d'été chez **ASTEELFLASH Tunisie**, puis complétée par la conception et le déploiement d'une infrastructure cloud complète sur **Amazon Web Services (AWS)**.
 
@@ -9,7 +9,7 @@ Ce projet illustre :
 - La conception d'une infrastructure cloud sécurisée et hautement disponible
 - Le déploiement d'un backend léger permettant le partage des données entre utilisateurs
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Utilisateurs (navigateurs multiples)
@@ -26,7 +26,7 @@ Utilisateurs (navigateurs multiples)
     Amazon S3 (requests.json)
 ```
 
-## ⚙️ Services AWS utilisés
+## Services AWS utilisés
 
 | Service | Rôle |
 |---|---|
@@ -42,7 +42,7 @@ Utilisateurs (navigateurs multiples)
 | CloudWatch | Surveillance et alertes |
 | CloudTrail | Traçabilité et audit des actions |
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 ├── Dash.html          # Tableau de bord
@@ -61,7 +61,7 @@ Utilisateurs (navigateurs multiples)
     └── server.js       # API backend Node.js (lecture/écriture S3)
 ```
 
-## 🚀 Fonctionnement
+## Fonctionnement
 
 1. L'utilisateur se connecte via la page de login
 2. Il peut créer, consulter et suivre les requêtes de production
@@ -69,13 +69,13 @@ Utilisateurs (navigateurs multiples)
 4. Un service Node.js, installé sur chaque instance EC2, expose une API (`/api/requests`) permettant de lire et écrire ces données
 5. Le client interroge cette API toutes les 5 secondes pour rester synchronisé avec les autres utilisateurs
 
-## 🔐 Identifiants de démonstration
+## Identifiants de démonstration
 
 - **Email** : `admin@asteelflash.com`
 - **Mot de passe** : `admin123`
 
 *(à modifier dans `login.js` pour un usage réel)*
 
-## 📝 Contexte
+## Contexte
 
 Projet réalisé dans le cadre d'un stage d'été à ASTEELFLASH Tunisie, avec une phase complémentaire de conception d'infrastructure cloud AWS, réalisée sur un environnement AWS Academy Learner Lab.
