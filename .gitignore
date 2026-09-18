@@ -1,0 +1,18 @@
+# Clés et secrets - JAMAIS sur Git
+*.pem
+*.key
+.env
+
+# Dépendances Node.js
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Fichiers PM2
+.pm2/

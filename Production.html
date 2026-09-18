@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="brand">Asteelflash</div>
+    <ul class="menu">
+        <li><a href="Dash.html">Dashboard</a></li>
+        <li><a href="Production.html" class="active">Production</a></li>
+        <li><a href="Login.html" id="logout" >⇥ Logout</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>Production</h1>
+    <p class="subtitle">Créez et modifiez les requêtes. Toute modification se reflète automatiquement sur le Dashboard.</p>
+
+    <div class="formulaire">
+        <h2>New Request</h2>
+
+        <label for="famille">Famille de carte</label>
+        <select id="famille" disabled>
+            <option value="Vacon" selected>Vacon</option>
+        </select>
+
+        <label for="refLabel">Référence de la carte</label>
+        <select id="carteRef">
+            <option>DNF70CMC03903G00F</option>
+            <option>DNF70CVB00728C01F</option>
+            <option>DNF70CVB00751L02F</option>
+            <option>DNF70CVB00789D01F</option>
+            <option>DNF70CVB00793D01F</option>
+            <option>DNF70CVB00830C01F</option>
+            <option>DNF70CVB00861C01F</option>
+            <option>DNFVB00253M01F</option>
+            <option>DNFVB00273K01F</option>
+            <option>DNFVB00283M01F</option>
+            <option>DNFVB00752K00F</option>
+            <option>DNFVB00761Q00F</option>
+            <option>DNF70CMC03921G00F</option>
+            <option>DNF139Z9760A00F</option>
+        </select>
+
+
+        <label for="quantite">Quantité demandée</label>
+        <input type="number" id="quantite">
+
+        <label for="dateCreation">Date de création</label>
+        <input type="date" id="dateCreation">
+
+        <label for="dateLimite">Date limite de livraison</label>
+        <input type="date" id="dateLimite">
+
+        <input type="submit" value="Add">
+    </div>
+
+    <h2>Requêtes en cours</h2>
+    <div class="newrequest" id="allProductionList">
+        <p class="empty" id="emptyState">Aucune requête pour l'instant.</p>
+    </div>
+
+</div>
+
+<script type="module" src="Production.js"></script>
+</body>
+</html>

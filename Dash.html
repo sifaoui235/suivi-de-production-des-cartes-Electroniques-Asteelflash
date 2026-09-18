@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Suivi de production</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="brand">Asteelflash</div>
+    <ul class="menu">
+        <li><a href="Dash.html" class="active">Dashboard</a></li>
+        <li><a href="Production.html">Production</a></li>
+        <li><a href="Login.html" id="logout" >⇥ Logout</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <h1>Bonjour 👋</h1>
+    <p class="subtitle">Vue d'ensemble de toutes les requêtes de production. Pour créer ou modifier une requête, rendez-vous sur la page Production.</p>
+
+    <div class="queue-header">
+        <h2>Toutes les requêtes</h2>
+        <input type="text" id="searchRef" placeholder="Rechercher par référence...">
+    </div>
+    <div class="newrequest" id="newrequest">
+        <p class="empty" id="emptyState">Aucune requête pour l'instant.</p>
+    </div>
+</div>
+
+<script type="module" src="auth-guard.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
